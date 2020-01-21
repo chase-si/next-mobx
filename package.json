@@ -1,0 +1,28 @@
+{
+  "name": "next-mobx",
+  "version": "1.0.0",
+  "description": "next typescript mobx",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chase",
+  "license": "ISC",
+  "dependencies": {
+    "mobx": "^5.15.2",
+    "mobx-react": "^6.1.5",
+    "next": "^9.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@types/node": "^13.1.8",
+    "@types/react": "^16.9.17",
+    "typescript": "^3.7.5"
+  }
+}

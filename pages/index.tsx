@@ -4,7 +4,7 @@ interface Props {
   testInitialProps?: string;
 }
 
-const App: NextPage<Props> = ({ testInitialProps }) => (
+const Page: NextPage<Props> = ({ testInitialProps }) => (
   <>
     <div>
       test: {testInitialProps}
@@ -12,9 +12,9 @@ const App: NextPage<Props> = ({ testInitialProps }) => (
   </>
 )
 
-App.getInitialProps = async (x) => {
+Page.getInitialProps = async (x) => {
   const testInitialProps = 'test'
   return { testInitialProps }
 }
 
-export default App
+export default Page

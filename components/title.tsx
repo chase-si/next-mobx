@@ -6,22 +6,17 @@ interface Props {
   testInitialProps?: string;
 }
 
-const App: NextPage<Props> = () => {
+const Title: NextPage<Props> = () => {
   const homeStore = useContext(MobXProviderContext)['homeStore']
 
-  console.log(homeStore)
+  console.log('rendering')
+
   return (
     <>
       <div>
-        test: 
+        test: {homeStore.testData} 
       </div>
     </>
   )
 }  
-
-// App.getInitialProps = async (x) => {
-//   const testInitialProps = 'test'
-//   return { testInitialProps }
-// }
-
-export default App
+export default Title
